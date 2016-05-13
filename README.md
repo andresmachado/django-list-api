@@ -4,6 +4,7 @@ It's a list app for create common daily lists, grocery lists and etc...
 ## Backend
 
 Django/Python
+
 django-rest-framework
 
 ## Frontend
@@ -11,5 +12,7 @@ django-rest-framework
 I'm deciding which JS framework i'll use. Maybe one of these below:
 
 React.JS
+
 AngularJS
+
 Ember
