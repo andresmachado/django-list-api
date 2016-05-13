@@ -1,5 +1,6 @@
+It's a list app for create common daily lists, grocery lists and etc..
+
 This app was created with the tools below:
-It's a list app for create common daily lists, grocery lists and etc...
 
 ## Backend
 
