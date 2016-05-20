@@ -10,7 +10,8 @@ router.register(r'lists', views.ListViewSet)
 router.register(r'products', views.ProductViewSet)
 
 urlpatterns = [
-        url(r'^', include(router.urls)),
-        url(r'^api-auth/', include('rest_framework.urls',
-                                   namespace='rest_framework'))
+    url(r'^$', views.list_create, name="list_create"),
+    url(r'api/v1/', include(router.urls)),
+    url(r'^api-auth/',
+        include('rest_framework.urls', namespace='rest_framework'))
 ]

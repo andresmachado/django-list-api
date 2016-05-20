@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
-
+from django.conf import settings
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
 class List(models.Model):
-    creator = models.ForeignKey('auth.User', related_name='lists')
+    creator = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='lists')
     name = models.CharField(_('Lista'), max_length=100)
     created_at = models.DateTimeField(auto_now=True)
 

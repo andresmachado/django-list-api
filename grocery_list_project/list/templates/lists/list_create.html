@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>List Create</title>
+</head>
+<body>
+    <form action="" method=POST>{% csrf_token %}
+        {{ form.as_p }}
+        {{ products.as_p }}
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
